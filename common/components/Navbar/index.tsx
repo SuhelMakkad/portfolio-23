@@ -27,8 +27,8 @@ const Navbar = () => {
       </div>
 
       <ul className="flex gap-4">
-        {links.map((link) => (
-          <li>
+        {links.map((link, index) => (
+          <li key={index}>
             <Link href={link.href}>{link.label}</Link>
           </li>
         ))}
