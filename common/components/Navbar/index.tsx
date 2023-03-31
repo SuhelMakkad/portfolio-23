@@ -15,7 +15,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="wrapper flex justify-between py-6 text-lg">
+    <nav className="flex justify-between py-6 text-lg">
       <div className="flex items-center gap-2">
         <span className="block h-2 w-2 shrink-0 rounded-full bg-white" />
         <span className="uppercase">
