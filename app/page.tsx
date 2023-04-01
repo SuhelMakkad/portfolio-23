@@ -24,6 +24,16 @@ export default function Home() {
           <ProjectList />
         </div>
       </section>
+
+      <section className="mt-32">
+        <Heading tag="h2" capitalized>
+          Find Me Here
+        </Heading>
+
+        <div className="mt-12">
+          <ProjectList />
+        </div>
+      </section>
     </>
   );
 }

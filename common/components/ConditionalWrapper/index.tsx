@@ -1,6 +1,6 @@
 export type Props = {
-  children: React.ReactElement;
-  wrapper: (children: React.ReactElement) => JSX.Element;
+  children: React.ReactNode;
+  wrapper: (children: React.ReactNode) => JSX.Element;
 };
 const ConditionalWrapper: React.FC<Props> = ({ wrapper, children }) =>
   wrapper(children);

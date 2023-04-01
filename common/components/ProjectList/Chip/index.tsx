@@ -13,7 +13,7 @@ const Chip = ({ href, label }: Props) => {
         href ? "hover:after:scale-x-100 focus:after:scale-x-100" : ""
       }`}
     >
-      <span>{label}</span>
+      {label}
     </OptionalLink>
   );
 };

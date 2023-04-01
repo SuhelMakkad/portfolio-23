@@ -1,9 +1,8 @@
 import Link from "next/link";
 import ConditionalWrapper from "../ConditionalWrapper";
-import { AllHTMLAttributes } from "react";
 
 export type Props = {
-  children: React.ReactElement;
+  children: React.ReactNode;
   href?: string;
   className?: string;
 };
