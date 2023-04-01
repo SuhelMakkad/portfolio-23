@@ -5,8 +5,6 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./common/components/**/*.{js,ts,jsx,tsx}",
-
-    // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
@@ -14,6 +12,15 @@ module.exports = {
       colors: {
         dark: "#111414",
         light: "#efefef",
+      },
+      animation: {
+        "fade-in": "500ms fadeIn forward",
+      },
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 },
+        },
       },
     },
   },
