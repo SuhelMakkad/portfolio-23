@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} wrapper bg-light text-dark dark:bg-dark dark:text-light`}
+        className={`${inter.className} wrapper bg-light text-lg text-dark dark:bg-dark dark:text-light`}
       >
         <Navbar />
 
