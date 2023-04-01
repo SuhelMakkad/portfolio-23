@@ -1,8 +1,9 @@
 import Link from "next/link";
-import { IoOpenOutline } from "@/components/Icons";
 
-import { Project } from "../data";
-import Chip from "../Chip";
+import { IoOpenOutline } from "@/components/Icons";
+import LinkWithUnderline from "@/components/LinkWithUnderline";
+
+import { Project } from "../../../utils/data";
 
 const ProjectSummary = (props: Project) => {
   const { title, subTitle, description, links, usedTechs } = props;
@@ -19,7 +20,7 @@ const ProjectSummary = (props: Project) => {
       <ul className="mb-2 flex gap-3 text-sm text-zinc-800 dark:text-zinc-200">
         {usedTechs.map((usedTech) => (
           <li key={usedTech.label}>
-            <Chip {...usedTech} />
+            <LinkWithUnderline {...usedTech} />
           </li>
         ))}
       </ul>

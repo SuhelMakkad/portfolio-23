@@ -1,5 +1,5 @@
 import ProjectSummary from "./ProjectSummary";
-import { projects } from "./data";
+import { projects } from "../../utils/data";
 
 const ProjectList = () => {
   return (

@@ -14,6 +14,21 @@ export type Tech = {
   href?: string;
 };
 
+export const socialLinks = [
+  {
+    label: "email",
+    href: "mailto:makadsuhel11@gmail.com",
+  },
+  {
+    label: "linkedin",
+    href: "https://www.linkedin.com/in/suhel-makkad-606a3219b/",
+  },
+  {
+    label: "twitter",
+    href: "https://twitter.com/suhel_makad",
+  },
+];
+
 export const techMap = {
   next13: {
     label: "Next 13",

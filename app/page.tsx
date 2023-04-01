@@ -1,5 +1,8 @@
 import Heading from "@/components/Heading";
+import LinkWithUnderline from "@/components/LinkWithUnderline";
 import ProjectList from "@/components/ProjectList";
+
+import { socialLinks } from "@/utils/data";
 
 export default function Home() {
   return (
@@ -30,9 +33,13 @@ export default function Home() {
           Find Me Here
         </Heading>
 
-        <div className="mt-12">
-          <ProjectList />
-        </div>
+        <ul className="mt-8 flex gap-4 text-5xl capitalize">
+          {socialLinks.map((link) => (
+            <li key={link.label}>
+              <LinkWithUnderline label={link.label} href={link.href} />
+            </li>
+          ))}
+        </ul>
       </section>
     </>
   );
