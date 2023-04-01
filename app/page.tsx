@@ -36,7 +36,9 @@ export default function Home() {
         <ul className="mt-8 flex gap-4 text-5xl capitalize">
           {socialLinks.map((link) => (
             <li key={link.label}>
-              <LinkWithUnderline label={link.label} href={link.href} />
+              <LinkWithUnderline href={link.href}>
+                {link.label}
+              </LinkWithUnderline>
             </li>
           ))}
         </ul>

@@ -1,11 +1,11 @@
 import OptionalLink from "@/components/OptionalLink";
 
 export type Props = {
-  label: string;
+  children: React.ReactNode;
   href?: string;
 };
 
-const LinkWithUnderline = ({ href, label }: Props) => {
+const LinkWithUnderline = ({ href, children }: Props) => {
   return (
     <OptionalLink
       href={href}
@@ -13,7 +13,7 @@ const LinkWithUnderline = ({ href, label }: Props) => {
         href ? "hover:after:scale-x-100 focus:after:scale-x-100" : ""
       }`}
     >
-      {label}
+      {children}
     </OptionalLink>
   );
 };
