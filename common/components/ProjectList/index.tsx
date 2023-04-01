@@ -3,7 +3,7 @@ import { projects } from "../../utils/data";
 
 const ProjectList = () => {
   return (
-    <ul className="flex flex-col gap-6">
+    <ul className="flex flex-col gap-12">
       {projects.map((project) => (
         <ProjectSummary key={project.title} {...project} />
       ))}

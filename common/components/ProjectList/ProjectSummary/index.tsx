@@ -17,7 +17,7 @@ const ProjectSummary = (props: Project) => {
         </header>
       </Link>
 
-      <ul className="mb-2 flex gap-3 text-sm text-zinc-800 dark:text-zinc-200">
+      <ul className="mb-2 flex gap-3 text-sm font-semibold text-zinc-800 dark:text-zinc-200">
         {usedTechs.map((usedTech) => (
           <li key={usedTech.label}>
             <LinkWithUnderline target="_blank" href={usedTech.href}>
