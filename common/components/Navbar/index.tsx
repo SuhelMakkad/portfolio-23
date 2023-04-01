@@ -1,5 +1,6 @@
 import CurrentTime from "@/components/CurrentTime";
 import LinkWithUnderline from "@/components/LinkWithUnderline";
+import ThemeSwitch from "../ThemeSwitch";
 
 const Navbar = () => {
   const links = [
@@ -25,13 +26,18 @@ const Navbar = () => {
         </span>
       </div>
 
-      <ul className="flex gap-4">
-        {links.map((link, index) => (
-          <li key={index}>
-            <LinkWithUnderline href={link.href}>{link.label}</LinkWithUnderline>
-          </li>
-        ))}
-      </ul>
+      <div className="flex items-center gap-2">
+        <ThemeSwitch />
+        <ul className="flex gap-4">
+          {links.map((link, index) => (
+            <li key={index}>
+              <LinkWithUnderline href={link.href}>
+                {link.label}
+              </LinkWithUnderline>
+            </li>
+          ))}
+        </ul>
+      </div>
     </nav>
   );
 };
