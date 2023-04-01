@@ -1,6 +1,4 @@
-import Link from "next/link";
-
-import { IoOpenOutline } from "@/components/Icons";
+import { IoOpenOutline, IoLogoGithub } from "@/components/Icons";
 import LinkWithUnderline from "@/components/LinkWithUnderline";
 
 import { Project } from "../../../utils/data";
@@ -10,14 +8,21 @@ const ProjectSummary = (props: Project) => {
 
   return (
     <li>
-      <Link href={links.live} target="_blank">
-        <header className="mb-2 flex gap-2 text-5xl">
-          <h4>{title}</h4> - <h6>{subTitle}</h6>
-          <IoOpenOutline />
-        </header>
-      </Link>
+      <header className="mb-2 flex items-center justify-between gap-2">
+        <LinkWithUnderline href={links.live} target="_blank">
+          <div className="flex gap-2 text-5xl">
+            <h4>{title}</h4>
+            <IoOpenOutline />
+          </div>
+        </LinkWithUnderline>
+      </header>
 
       <ul className="mb-2 flex gap-3 text-sm font-semibold text-zinc-800 dark:text-zinc-200">
+        <li>
+          <LinkWithUnderline target="_blank" href={links.github}>
+            GitHub Repo
+          </LinkWithUnderline>
+        </li>
         {usedTechs.map((usedTech) => (
           <li key={usedTech.label}>
             <LinkWithUnderline target="_blank" href={usedTech.href}>
