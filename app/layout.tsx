@@ -1,5 +1,7 @@
 import { Inter } from "next/font/google";
 
+import { Analytics } from "@vercel/analytics/react";
+
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FaviconLinks from "@/components/FaviconLinks";
@@ -53,6 +55,8 @@ export default function RootLayout({
         <main>{children}</main>
 
         <Footer />
+
+        <Analytics />
       </body>
     </html>
   );
