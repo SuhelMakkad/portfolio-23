@@ -18,7 +18,7 @@ export default function Home() {
         </p>
       </section>
 
-      <section className="mt-32">
+      <section id="work" className="mt-32">
         <Heading tag="h2" capitalized dir="end">
           Selected Work
         </Heading>
@@ -28,7 +28,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mt-32">
+      <section id="contact" className="mt-32">
         <Heading tag="h2" capitalized>
           Find Me Here
         </Heading>
