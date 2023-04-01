@@ -20,7 +20,7 @@ const ProjectSummary = (props: Project) => {
       <ul className="mb-2 flex gap-3 text-sm text-zinc-800 dark:text-zinc-200">
         {usedTechs.map((usedTech) => (
           <li key={usedTech.label}>
-            <LinkWithUnderline href={usedTech.href}>
+            <LinkWithUnderline target="_blank" href={usedTech.href}>
               {usedTech.label}
             </LinkWithUnderline>
           </li>

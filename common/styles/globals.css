@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  color-scheme: light dark;
+}
+
 @layer utilities {
   .wrapper {
     @apply mx-auto max-w-7xl px-3 md:px-6 lg:px-14 xl:px-4;

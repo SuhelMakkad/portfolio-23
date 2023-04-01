@@ -7,7 +7,7 @@ import { socialLinks } from "@/utils/data";
 export default function Home() {
   return (
     <>
-      <section className="mt-20">
+      <section id="intro" className="mt-20">
         <Heading tag="h1" uppercase>
           Suhel <br /> Makkad
         </Heading>
@@ -36,7 +36,7 @@ export default function Home() {
         <ul className="mt-8 flex gap-4 text-5xl capitalize">
           {socialLinks.map((link) => (
             <li key={link.label}>
-              <LinkWithUnderline href={link.href}>
+              <LinkWithUnderline target="_blank" href={link.href}>
                 {link.label}
               </LinkWithUnderline>
             </li>

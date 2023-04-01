@@ -24,6 +24,10 @@ export const socialLinks = [
     href: "https://www.linkedin.com/in/suhel-makkad-606a3219b/",
   },
   {
+    label: "GitHub",
+    href: "https://github.com/SuhelMakkad",
+  },
+  {
     label: "twitter",
     href: "https://twitter.com/suhel_makad",
   },
