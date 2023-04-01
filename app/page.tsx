@@ -6,12 +6,15 @@ import { socialLinks } from "@/utils/data";
 export default function Home() {
   return (
     <>
-      <section id="intro" className="mt-20">
+      <section
+        id="intro"
+        className="my-auto flex min-h-[60vh] flex-col justify-center"
+      >
         <h1 className="text-8xl font-semibold uppercase">
           Suhel <br /> Makkad
         </h1>
 
-        <p className="mt-4">
+        <p className="mt-6">
           Frontend engineer with over a 2 years of experience building nice
           things for good people.
         </p>
