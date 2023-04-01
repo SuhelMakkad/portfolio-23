@@ -48,7 +48,7 @@ export default function RootLayout({
       </head>
 
       <body
-        className={`${inter.className} wrapper text-md bg-light text-dark antialiased transition-colors duration-300 dark:bg-dark dark:text-light sm:text-lg`}
+        className={`${inter.className} wrapper text-md bg-light text-dark antialiased transition-colors duration-300 selection:bg-dark selection:text-light dark:bg-dark dark:text-light dark:selection:bg-light dark:selection:text-dark sm:text-lg`}
       >
         <Navbar />
 
