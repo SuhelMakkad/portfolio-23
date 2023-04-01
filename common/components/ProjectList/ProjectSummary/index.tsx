@@ -23,13 +23,13 @@ const ProjectSummary = (props: Project) => {
       <ul className="mb-2 flex flex-wrap gap-3 whitespace-nowrap text-sm font-semibold text-zinc-800 dark:text-zinc-200">
         <li>
           <LinkWithUnderline target="_blank" href={links.github}>
-            GitHub Repo
+            <span>GitHub Repo</span>
           </LinkWithUnderline>
         </li>
         {usedTechs.map((usedTech) => (
           <li key={usedTech.label}>
             <LinkWithUnderline target="_blank" href={usedTech.href}>
-              {usedTech.label}
+              <span>{usedTech.label}</span>
             </LinkWithUnderline>
           </li>
         ))}
