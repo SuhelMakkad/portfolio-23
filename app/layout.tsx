@@ -2,11 +2,13 @@ import { Inter } from "next/font/google";
 
 import { Analytics } from "@vercel/analytics/react";
 
+import TracingBlob from "@/components/TracingBlob";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FaviconLinks from "@/components/FaviconLinks";
 
 import "@/styles/globals.css";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -50,6 +52,8 @@ export default function RootLayout({
       <body
         className={`${inter.className} wrapper text-md bg-light text-dark antialiased transition-colors duration-300 selection:bg-dark selection:text-light dark:bg-dark dark:text-light dark:selection:bg-light dark:selection:text-dark sm:text-lg`}
       >
+        <TracingBlob />
+
         <Navbar />
 
         <main>{children}</main>

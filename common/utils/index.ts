@@ -17,3 +17,36 @@ export const getCurrentTime = () => {
 
   return time;
 };
+
+export function debounce<Params extends any[]>(
+  func: (...args: Params) => any,
+  timeout: number
+): (...args: Params) => void {
+  let timer: NodeJS.Timeout;
+
+  return (...args: Params) => {
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      func(...args);
+    }, timeout);
+  };
+}
+
+export function throttle<Params extends any[]>(
+  func: (...args: Params) => any,
+  timeout: number
+): (...args: Params) => void {
+  let ready: boolean = true;
+
+  return (...args) => {
+    if (!ready) {
+      return;
+    }
+
+    ready = false;
+    func(...args);
+    setTimeout(() => {
+      ready = true;
+    }, timeout);
+  };
+}
