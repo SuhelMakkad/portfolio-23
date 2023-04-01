@@ -1,5 +1,7 @@
+import LinkWithUnderline from "@/components/LinkWithUnderline";
 import ProjectSummary from "./ProjectSummary";
-import { projects } from "../../utils/data";
+
+import { projects, githubLink } from "@/utils/data";
 
 const ProjectList = () => {
   return (
@@ -7,6 +9,10 @@ const ProjectList = () => {
       {projects.map((project) => (
         <ProjectSummary key={project.title} {...project} />
       ))}
+
+      <li className="text-start">
+        <LinkWithUnderline href={githubLink}>and more...</LinkWithUnderline>
+      </li>
     </ul>
   );
 };

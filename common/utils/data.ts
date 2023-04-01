@@ -14,6 +14,8 @@ export type Tech = {
   href?: string;
 };
 
+export const githubLink = "https://github.com/SuhelMakkad";
+
 export const socialLinks = [
   {
     label: "email",
@@ -25,7 +27,7 @@ export const socialLinks = [
   },
   {
     label: "GitHub",
-    href: "https://github.com/SuhelMakkad",
+    href: githubLink,
   },
   {
     label: "twitter",

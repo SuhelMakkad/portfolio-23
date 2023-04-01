@@ -20,7 +20,7 @@ export default function Home() {
         </p>
       </section>
 
-      <section id="work" className="mt-32">
+      <section id="work" className="mt-20">
         <h2 className="text-end text-4xl font-medium capitalize text-black dark:text-white">
           Selected Work
         </h2>
@@ -30,12 +30,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="contact" className="mt-32">
+      <section id="contact" className="mt-20">
         <h2 className="text-4xl font-medium capitalize text-black dark:text-white">
           Find Me Here
         </h2>
 
-        <ul className="mt-8 flex flex-wrap gap-6 text-5xl capitalize">
+        <ul className="mt-8 flex flex-wrap justify-end gap-6 text-5xl capitalize">
           {socialLinks.map((link) => (
             <li key={link.label}>
               <LinkWithUnderline target="_blank" href={link.href}>

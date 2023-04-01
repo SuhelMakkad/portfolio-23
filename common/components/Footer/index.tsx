@@ -1,16 +1,14 @@
-import LinkWithUnderline from "../LinkWithUnderline";
-import { AiOutlineArrowUp } from "../Icons";
-import Link from "next/link";
+import LinkWithUnderline from "@/components/LinkWithUnderline";
+import { AiOutlineArrowUp } from "@/components/Icons";
+
+import { githubLink } from "@/utils/data";
 
 const Footer = () => {
   return (
     <footer className="mt-20 flex items-center justify-between pb-4">
       <span>
         Design & Coded by{" "}
-        <LinkWithUnderline
-          target="_blank"
-          href="https://github.com/SuhelMakkad"
-        >
+        <LinkWithUnderline target="_blank" href={githubLink}>
           Suhel Makkad
         </LinkWithUnderline>
       </span>
