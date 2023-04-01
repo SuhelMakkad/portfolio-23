@@ -10,7 +10,7 @@ export default function Home() {
         id="intro"
         className="my-auto flex h-[60vh] max-h-96 flex-col justify-center"
       >
-        <h1 className="pt-6 text-8xl font-semibold uppercase">
+        <h1 className="overflow-hidden text-ellipsis pt-6 text-7xl font-semibold uppercase sm:text-8xl">
           Suhel <br /> Makkad
         </h1>
 

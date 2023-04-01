@@ -5,7 +5,7 @@ import { githubLink } from "@/utils/data";
 
 const Footer = () => {
   return (
-    <footer className="mt-20 flex items-center justify-between pb-4">
+    <footer className="mt-20 flex flex-col-reverse items-center justify-between pb-4 sm:flex-row">
       <span>
         Design & Coded by{" "}
         <LinkWithUnderline target="_blank" href={githubLink}>

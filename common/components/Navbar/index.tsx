@@ -15,21 +15,18 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="flex justify-between py-6">
+    <nav className="flex items-start justify-between py-6  sm:items-center">
       <div className="flex items-center gap-2">
         <span className="block h-2 w-2 shrink-0 rounded-full bg-black dark:bg-white" />
         <span className="uppercase">
-          Gujarat, India{" "}
-          <span className="max-sm:hidden">
-            <CurrentTime />
-          </span>
+          <span className="max-sm:hidden">Gujarat,</span> India <CurrentTime />
         </span>
       </div>
 
-      <div className="flex items-center gap-2">
+      <div className="flex items-start gap-2 sm:items-center">
         <ThemeSwitch />
 
-        <ul className="flex gap-4">
+        <ul className="flex flex-col gap-4 text-end sm:flex-row">
           {links.map((link, index) => (
             <li key={index}>
               <LinkWithUnderline href={link.href}>

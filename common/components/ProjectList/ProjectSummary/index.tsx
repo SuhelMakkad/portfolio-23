@@ -20,7 +20,7 @@ const ProjectSummary = (props: Project) => {
         </LinkWithUnderline>
       </header>
 
-      <ul className="mb-2 flex gap-3 text-sm font-semibold text-zinc-800 dark:text-zinc-200">
+      <ul className="mb-2 flex flex-wrap gap-3 whitespace-nowrap text-sm font-semibold text-zinc-800 dark:text-zinc-200">
         <li>
           <LinkWithUnderline target="_blank" href={links.github}>
             GitHub Repo
