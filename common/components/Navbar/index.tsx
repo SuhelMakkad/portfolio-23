@@ -28,6 +28,7 @@ const Navbar = () => {
 
       <div className="flex items-center gap-2">
         <ThemeSwitch />
+
         <ul className="flex gap-4">
           {links.map((link, index) => (
             <li key={index}>
