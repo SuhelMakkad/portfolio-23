@@ -1,4 +1,3 @@
-import Heading from "@/components/Heading";
 import LinkWithUnderline from "@/components/LinkWithUnderline";
 import ProjectList from "@/components/ProjectList";
 
@@ -8,9 +7,9 @@ export default function Home() {
   return (
     <>
       <section id="intro" className="mt-20">
-        <Heading tag="h1" uppercase>
+        <h1 className="text-8xl font-semibold uppercase">
           Suhel <br /> Makkad
-        </Heading>
+        </h1>
 
         <p className="mt-4">
           Frontend engineer with over a 2 years of experience building nice
@@ -19,9 +18,9 @@ export default function Home() {
       </section>
 
       <section id="work" className="mt-32">
-        <Heading tag="h2" capitalized dir="end">
+        <h2 className="text-end text-4xl font-medium capitalize text-black dark:text-white">
           Selected Work
-        </Heading>
+        </h2>
 
         <div className="mt-12">
           <ProjectList />
@@ -29,11 +28,11 @@ export default function Home() {
       </section>
 
       <section id="contact" className="mt-32">
-        <Heading tag="h2" capitalized>
+        <h2 className="text-4xl font-medium capitalize text-black dark:text-white">
           Find Me Here
-        </Heading>
+        </h2>
 
-        <ul className="mt-8 flex gap-4 text-5xl capitalize">
+        <ul className="mt-8 flex flex-wrap gap-6 text-5xl capitalize">
           {socialLinks.map((link) => (
             <li key={link.label}>
               <LinkWithUnderline target="_blank" href={link.href}>
