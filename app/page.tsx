@@ -8,9 +8,9 @@ export default function Home() {
     <>
       <section
         id="intro"
-        className="my-auto flex min-h-[60vh] flex-col justify-center"
+        className="my-auto flex h-[60vh] max-h-96 flex-col justify-center"
       >
-        <h1 className="text-8xl font-semibold uppercase">
+        <h1 className="pt-6 text-8xl font-semibold uppercase">
           Suhel <br /> Makkad
         </h1>
 
