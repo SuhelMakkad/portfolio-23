@@ -8,7 +8,10 @@ const ProjectSummary = (props: Project) => {
 
   return (
     <li>
-      <header className="mb-2 flex items-center justify-between gap-2">
+      <header
+        className="mb-2 flex items-center justify-between gap-2"
+        title={subTitle}
+      >
         <LinkWithUnderline href={links.live} target="_blank">
           <div className="flex gap-2 text-5xl">
             <h4>{title}</h4>
