@@ -17,7 +17,7 @@ const CurrentTime = () => {
     return () => clearInterval(intervalId);
   }, []);
 
-  return <>{time}</>;
+  return time ? <span className="animate-fade-in">{time}</span> : <span></span>;
 };
 
 export default CurrentTime;
