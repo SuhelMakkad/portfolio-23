@@ -13,22 +13,32 @@
   z-index: 1;
 }
 
+.blobWrapper {
+  display: block;
+  will-change: transform;
+}
+
 .blob {
   --size: 20vmax;
-  display: block;
+  --max-size: 20rem;
+
   height: var(--size);
   width: var(--size);
+
+  max-height: var(--max-size);
+  max-width: var(--max-size);
+
+  display: block;
 
   background-color: rgb(0, 0, 0);
   border-radius: 100%;
 
-  position: fixed;
   translate: -50% -50%;
 
-  animation: morph 20s infinite;
-  z-index: -2;
-  opacity: 0.5;
   transition: background-color 300ms ease;
+  animation: morph 20s infinite;
+  opacity: 0.5;
+  z-index: -2;
 }
 
 :global(.dark) .blob {

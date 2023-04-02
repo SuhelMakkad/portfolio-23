@@ -16,8 +16,7 @@ const TracingBlob = () => {
 
       blobRef.current.animate(
         {
-          left: `${clientX}px`,
-          top: `${clientY}px`,
+          transform: `translate(${clientX}px, ${clientY}px)`,
         },
         { duration: 300, fill: "forwards" }
       );
@@ -29,8 +28,10 @@ const TracingBlob = () => {
   }, [blobRef]);
   return (
     <div className={styles.main}>
-      <span className={styles.blur}></span>
-      <span ref={blobRef} className={styles.blob}></span>
+      <span className={styles.blur} />
+      <span ref={blobRef} className={styles.blobWrapper}>
+        <span className={styles.blob} />
+      </span>
     </div>
   );
 };
