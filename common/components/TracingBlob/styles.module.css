@@ -34,9 +34,9 @@
   border-radius: 100%;
 
   translate: -50% -50%;
-
   transition: background-color 300ms ease;
   animation: morph 20s infinite;
+
   opacity: 0.5;
   z-index: -2;
 }
