@@ -1,15 +1,15 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { throttle } from "@/utils";
 
 import styles from "./styles.module.css";
-import { throttle } from "@/utils";
 
 const TracingBlob = () => {
   const blobRef = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
-    const handlePointerMove = throttle((e: PointerEvent) => {
+    const handlePointerMove = (e: PointerEvent) => {
       if (!blobRef.current) return;
 
       const { clientX, clientY } = e;
@@ -21,7 +21,7 @@ const TracingBlob = () => {
         },
         { duration: 300, fill: "forwards" }
       );
-    }, 100);
+    };
 
     document.addEventListener("pointermove", handlePointerMove);
 
