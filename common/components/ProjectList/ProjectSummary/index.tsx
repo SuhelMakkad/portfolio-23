@@ -22,9 +22,10 @@ const ProjectSummary = (props: Project) => {
 
       <ul className="mb-2 flex flex-wrap gap-3 whitespace-nowrap text-sm font-semibold text-zinc-800 dark:text-zinc-200">
         <li>
-          <LinkWithUnderline target="_blank" href={links.github}>
+          <span className="flex items-center gap-1">
+            <IoLogoGithub />
             <span>GitHub Repo</span>
-          </LinkWithUnderline>
+          </span>
         </li>
         {usedTechs.map((usedTech) => (
           <li key={usedTech.label}>

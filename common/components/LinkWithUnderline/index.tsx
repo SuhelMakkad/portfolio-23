@@ -12,7 +12,7 @@ const LinkWithUnderline = ({ href, target, children }: Props) => {
     <OptionalLink
       href={href}
       target={target}
-      className={`relative outline-none after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[5%] after:origin-left after:scale-x-0 after:bg-zinc-600 after:transition-transform after:duration-200 dark:after:bg-zinc-400 ${
+      className={`relative outline-none after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[5%] after:origin-left after:scale-x-0 after:bg-current after:transition-transform after:duration-200 dark:after:bg-current ${
         href ? "hover:after:scale-x-100 focus:after:scale-x-100" : ""
       }`}
     >
