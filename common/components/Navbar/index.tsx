@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <nav className="flex items-start justify-between py-6  sm:items-center">
       <div className="flex items-center gap-2">
-        <span className="block h-2 w-2 shrink-0 rounded-full bg-black dark:bg-white" />
+        <span className="block h-2 w-2 shrink-0 rounded-full bg-black transition-colors dark:bg-white" />
         <span className="uppercase">
           <span className="max-sm:hidden">Gujarat,</span> India <CurrentTime />
         </span>

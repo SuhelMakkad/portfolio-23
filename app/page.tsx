@@ -21,7 +21,7 @@ export default function Home() {
       </section>
 
       <section id="work" className="mt-20">
-        <h2 className="text-end text-4xl font-medium capitalize text-black dark:text-white">
+        <h2 className="text-end text-4xl font-medium capitalize text-black duration-300 dark:text-white">
           Selected Work
         </h2>
 
@@ -31,7 +31,7 @@ export default function Home() {
       </section>
 
       <section id="contact" className="mt-20">
-        <h2 className="text-4xl font-medium capitalize text-black dark:text-white">
+        <h2 className="text-4xl font-medium capitalize text-black duration-300 dark:text-white">
           Find Me Here
         </h2>
 

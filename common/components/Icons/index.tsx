@@ -1,3 +1,5 @@
+import { SVGProps } from "react";
+
 export const IoOpenOutline = () => (
   <svg
     stroke="currentColor"
@@ -18,8 +20,9 @@ export const IoOpenOutline = () => (
   </svg>
 );
 
-export const IoLogoGithub = () => (
+export const IoLogoGithub = (props: SVGProps<SVGSVGElement>) => (
   <svg
+    {...props}
     stroke="currentColor"
     fill="currentColor"
     strokeWidth="0"

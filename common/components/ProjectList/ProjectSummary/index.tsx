@@ -20,17 +20,19 @@ const ProjectSummary = (props: Project) => {
         </LinkWithUnderline>
       </header>
 
-      <ul className="mb-2 flex flex-wrap gap-3 whitespace-nowrap text-sm font-semibold text-zinc-800 dark:text-zinc-200">
+      <ul className="mb-2 flex flex-wrap items-center gap-3 whitespace-nowrap text-sm font-semibold text-zinc-800 dark:text-zinc-200">
         <li>
-          <span className="flex items-center gap-1">
-            <IoLogoGithub />
-            <span>GitHub Repo</span>
-          </span>
+          <LinkWithUnderline target="_blank" href={links.github}>
+            <span className="flex items-center gap-1 leading-none duration-300">
+              <IoLogoGithub className="text-lg" />
+              <span>GitHub Repo</span>
+            </span>
+          </LinkWithUnderline>
         </li>
         {usedTechs.map((usedTech) => (
           <li key={usedTech.label}>
             <LinkWithUnderline target="_blank" href={usedTech.href}>
-              <span>{usedTech.label}</span>
+              <span className="duration-300">{usedTech.label}</span>
             </LinkWithUnderline>
           </li>
         ))}
