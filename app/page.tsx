@@ -2,7 +2,7 @@ import LinkWithUnderline from "@/components/LinkWithUnderline";
 import ProjectList from "@/components/ProjectList";
 import SectionHeading from "@/components/SectionHeading";
 
-import { socialLinks } from "@/utils/data";
+import { socialLinks, universityLink } from "@/utils/data";
 
 export default function Home() {
   return (
@@ -24,15 +24,31 @@ export default function Home() {
       <section id="work" className="mt-20">
         <SectionHeading>Selected Work</SectionHeading>
 
-        <div className="mt-12">
-          <ProjectList />
+        <ProjectList />
+      </section>
+
+      <section id="education" className="mt-20">
+        <SectionHeading>Past Education</SectionHeading>
+
+        <div className="flex flex-col gap-2">
+          <span className="text-5xl">Electronics Engineering</span>
+          <span className="text-sm font-semibold text-zinc-800 dark:text-zinc-200">
+            May 2021 - April 2022
+          </span>
+          <span>
+            Graduated from{" "}
+            <LinkWithUnderline target="_blank" href={universityLink}>
+              Dharmsinh Desai University
+            </LinkWithUnderline>{" "}
+            with 6.2 CPI
+          </span>
         </div>
       </section>
 
       <section id="contact" className="mt-20">
         <SectionHeading>Find Me Here</SectionHeading>
 
-        <ul className="mt-8 flex flex-wrap gap-6 text-5xl capitalize">
+        <ul className="flex flex-wrap gap-6 text-5xl capitalize">
           {socialLinks.map((link) => (
             <li key={link.label}>
               <LinkWithUnderline target="_blank" href={link.href}>

@@ -16,6 +16,8 @@ export type Tech = {
 
 export const githubLink = "https://github.com/SuhelMakkad";
 
+export const universityLink = "https://www.ddu.ac.in/";
+
 export const socialLinks = [
   {
     label: "email",
