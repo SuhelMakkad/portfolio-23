@@ -14,7 +14,7 @@ module.exports = {
         light: "#efefef",
       },
       animation: {
-        "fade-in": "fadeIn 200ms ease-in",
+        "fade-in": "fadeIn 300ms ease-in",
       },
       keyframes: {
         fadeIn: {

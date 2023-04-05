@@ -33,7 +33,7 @@ const ThemeSwitch = () => {
         id="header__sun"
         onClick={toDarkMode}
         title="Switch to dark mode"
-        className="focus:shadow-outline relative flex h-10 w-10 items-center justify-center text-gray-500 dark:hidden"
+        className="focus:shadow-outline relative flex h-10 w-10 animate-fade-in items-center justify-center dark:hidden"
       >
         <SunIcon />
       </button>
@@ -42,7 +42,7 @@ const ThemeSwitch = () => {
         id="header__moon"
         onClick={toLightMode}
         title="Switch to light mode"
-        className="focus:shadow-outline relative hidden h-10 w-10 items-center justify-center text-gray-200 dark:flex"
+        className="focus:shadow-outline relative hidden h-10 w-10 animate-fade-in items-center justify-center dark:flex"
       >
         <MoonIcon />
       </button>
