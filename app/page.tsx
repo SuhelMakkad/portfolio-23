@@ -1,5 +1,6 @@
 import LinkWithUnderline from "@/components/LinkWithUnderline";
 import ProjectList from "@/components/ProjectList";
+import SectionHeading from "@/components/SectionHeading";
 
 import { socialLinks } from "@/utils/data";
 
@@ -21,9 +22,7 @@ export default function Home() {
       </section>
 
       <section id="work" className="mt-20">
-        <h2 className="text-end text-4xl font-medium capitalize text-black duration-300 dark:text-white">
-          Selected Work
-        </h2>
+        <SectionHeading>Selected Work</SectionHeading>
 
         <div className="mt-12">
           <ProjectList />
@@ -31,11 +30,9 @@ export default function Home() {
       </section>
 
       <section id="contact" className="mt-20">
-        <h2 className="text-4xl font-medium capitalize text-black duration-300 dark:text-white">
-          Find Me Here
-        </h2>
+        <SectionHeading>Find Me Here</SectionHeading>
 
-        <ul className="mt-8 flex flex-wrap justify-end gap-6 text-5xl capitalize">
+        <ul className="mt-8 flex flex-wrap  gap-6 text-5xl capitalize">
           {socialLinks.map((link) => (
             <li key={link.label}>
               <LinkWithUnderline target="_blank" href={link.href}>
