@@ -32,7 +32,7 @@ export default function Home() {
       <section id="contact" className="mt-20">
         <SectionHeading>Find Me Here</SectionHeading>
 
-        <ul className="mt-8 flex flex-wrap  gap-6 text-5xl capitalize">
+        <ul className="mt-8 flex flex-wrap gap-6 text-5xl capitalize">
           {socialLinks.map((link) => (
             <li key={link.label}>
               <LinkWithUnderline target="_blank" href={link.href}>
