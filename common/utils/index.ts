@@ -50,3 +50,7 @@ export function throttle<Params extends any[]>(
     }, timeout);
   };
 }
+
+export const isMouseAvailable = () =>
+  window.matchMedia("(any-pointer: coarse)").matches ||
+  !matchMedia("(pointer:fine)").matches;

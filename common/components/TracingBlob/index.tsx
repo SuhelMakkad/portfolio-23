@@ -1,14 +1,16 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { throttle } from "@/utils";
 
 import styles from "./styles.module.css";
+import { isMouseAvailable } from "@/utils";
 
 const TracingBlob = () => {
   const blobRef = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
+    if (!blobRef.current) return;
+
     const handlePointerMove = (e: PointerEvent) => {
       if (!blobRef.current) return;
 
@@ -26,6 +28,11 @@ const TracingBlob = () => {
 
     return () => document.removeEventListener("pointermove", handlePointerMove);
   }, [blobRef]);
+
+  if (isMouseAvailable()) {
+    return <></>;
+  }
+
   return (
     <div className={styles.main}>
       <span className={styles.blur} />
