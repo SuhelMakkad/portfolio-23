@@ -44,13 +44,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en" className="dark scroll-smooth">
       <head>
         <FaviconLinks />
       </head>
 
       <body
-        className={`${inter.className} wrapper text-md bg-light text-dark antialiased transition-colors duration-300 selection:bg-dark selection:text-light dark:bg-dark dark:text-light dark:selection:bg-light dark:selection:text-dark sm:text-lg`}
+        className={`${inter.className} wrapper text-md scroll-smooth bg-light text-dark antialiased transition-colors duration-300 selection:bg-dark selection:text-light dark:bg-dark dark:text-light dark:selection:bg-light dark:selection:text-dark sm:text-lg`}
       >
         <TracingBlob />
 

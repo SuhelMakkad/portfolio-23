@@ -17,9 +17,9 @@ const OptionalLink = ({ children, href, target, className }: Props) => {
       wrapper={(children) =>
         href ? (
           <Link
+            {...commonProps}
             href={href}
             target={target}
-            {...commonProps}
             rel="noopener noreferrer"
           >
             {children}

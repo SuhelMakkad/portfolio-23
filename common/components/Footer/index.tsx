@@ -13,7 +13,7 @@ const Footer = () => {
         </LinkWithUnderline>
       </span>
 
-      <a href={"#into"} className="flex items-center gap-2">
+      <a href={"#intro"} className="flex items-center gap-2">
         Back to top
         <AiOutlineArrowUp />
       </a>
