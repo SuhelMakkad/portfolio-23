@@ -28,7 +28,7 @@ const TracingBlob = () => {
     document.addEventListener("pointermove", handlePointerMove);
 
     return () => document.removeEventListener("pointermove", handlePointerMove);
-  }, [blobRef]);
+  }, [isMoused, blobRef]);
 
   useEffect(() => {
     setIsMoused(isMouseAvailable());

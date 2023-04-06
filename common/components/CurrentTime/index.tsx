@@ -8,6 +8,9 @@ const CurrentTime = () => {
   const [time, setTime] = useState("");
 
   useEffect(() => {
+    const currTime = getCurrentTime();
+    setTime(currTime);
+
     const intervalInMs = 1000;
     const intervalId = setInterval(() => {
       const currTime = getCurrentTime();
