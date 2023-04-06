@@ -34,7 +34,7 @@ const TracingBlob = () => {
     setIsMoused(isMouseAvailable());
   }, []);
 
-  if (isMoused) {
+  if (!isMoused) {
     return <></>;
   }
 
