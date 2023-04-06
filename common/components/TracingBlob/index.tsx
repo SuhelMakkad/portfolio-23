@@ -41,7 +41,7 @@ const TracingBlob = () => {
   return (
     <div className={styles.main}>
       <span className={styles.blur} />
-      <span ref={blobRef} className={styles.blobWrapper}>
+      <span ref={blobRef} className={`animate-fade-in ${styles.blobWrapper}`}>
         <span className={styles.blob} />
       </span>
     </div>
