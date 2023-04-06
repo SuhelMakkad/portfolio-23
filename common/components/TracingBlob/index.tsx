@@ -1,11 +1,12 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import styles from "./styles.module.css";
 import { isMouseAvailable } from "@/utils";
 
 const TracingBlob = () => {
+  const [isMoused, setIsMoused] = useState(false);
   const blobRef = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
@@ -29,7 +30,11 @@ const TracingBlob = () => {
     return () => document.removeEventListener("pointermove", handlePointerMove);
   }, [blobRef]);
 
-  if (isMouseAvailable()) {
+  useEffect(() => {
+    setIsMoused(isMouseAvailable());
+  }, []);
+
+  if (isMoused) {
     return <></>;
   }
 
