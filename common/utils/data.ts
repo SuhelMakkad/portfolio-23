@@ -32,7 +32,7 @@ export const socialLinks = [
     href: githubLink,
   },
   {
-    label: "twitter",
+    label: "x",
     href: "https://twitter.com/suhel_makad",
   },
 ];
@@ -137,3 +137,6 @@ export const projects: Project[] = [
 
 export const personalDescription =
   "Frontend engineer with over a 3 years of experience building nice things for good people.";
+
+export const resumeLink =
+  "https://drive.google.com/file/d/1sFmW91ChVf_jF_9IIY4Dsb5RXjo_3ScR/view";
