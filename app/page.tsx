@@ -16,7 +16,7 @@ export default function Home() {
         </h1>
 
         <p className="mt-6">
-          Frontend engineer with over a 2 years of experience building nice
+          Frontend engineer with over a 3 years of experience building nice
           things for good people.
         </p>
       </section>
