@@ -37,7 +37,7 @@
   transition: background-color 300ms ease;
   animation: morph 20s infinite;
 
-  opacity: 0.5;
+  opacity: 0.15;
   z-index: -2;
 }
 

@@ -7,14 +7,15 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FaviconLinks from "@/components/FaviconLinks";
 
+import { personalDescription } from "@/utils/data";
+
 import "@/styles/globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Suhel Makkad",
-  description:
-    "Frontend engineer with over a 2 years of experience building nice things for good people.",
+  description: personalDescription,
   manifest: "/assets/favicon/manifest.json",
   authors: [
     {

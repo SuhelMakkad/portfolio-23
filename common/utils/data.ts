@@ -134,3 +134,6 @@ export const projects: Project[] = [
     usedTechs: [techMap.tailwind, techMap.typescript, techMap.githubActions],
   },
 ];
+
+export const personalDescription =
+  "Frontend engineer with over a 3 years of experience building nice things for good people.";

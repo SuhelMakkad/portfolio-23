@@ -2,7 +2,7 @@ import LinkWithUnderline from "@/components/LinkWithUnderline";
 import ProjectList from "@/components/ProjectList";
 import SectionHeading from "@/components/SectionHeading";
 
-import { socialLinks, universityLink } from "@/utils/data";
+import { personalDescription, socialLinks, universityLink } from "@/utils/data";
 
 export default function Home() {
   return (
@@ -15,10 +15,7 @@ export default function Home() {
           Suhel <br /> Makkad
         </h1>
 
-        <p className="mt-6">
-          Frontend engineer with over a 3 years of experience building nice
-          things for good people.
-        </p>
+        <p className="mt-6">{personalDescription}</p>
       </section>
 
       <section id="work" className="mt-20">
