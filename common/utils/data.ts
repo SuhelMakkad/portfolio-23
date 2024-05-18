@@ -65,6 +65,17 @@ export const techMap = {
     label: "GitHub Actions",
     href: "https://github.com/features/actions",
   },
+  openSource: {
+    label: "Open Source",
+  },
+  vsCodeExtension: {
+    label: "VS Code Extension",
+    href: "https://code.visualstudio.com/docs/editor/extension-marketplace",
+  },
+  shadcnUI: {
+    label: "shadcn/UI",
+    href: "https://ui.shadcn.com/",
+  },
 };
 
 export const projects: Project[] = [
@@ -82,6 +93,22 @@ export const projects: Project[] = [
       techMap.tailwind,
       techMap.typescript,
       techMap.tmdb,
+    ],
+  },
+  {
+    title: "VS Code Extension for shadcn/UI",
+    subTitle: "Add components from shadcn/ui directly from VS Code",
+    links: {
+      live: "https://marketplace.visualstudio.com/items?itemName=SuhelMakkad.shadcn-ui",
+      github: "https://github.com/SuhelMakkad/vscode-shadcn-ui",
+    },
+    description:
+      "This extensions helps install the shadcn/ui components directly from VS Code. This extension is a great way to speed up the development process and make it easier to use shadcn/ui components in your react projects. This project has over 5.8K downloads on the VS Code marketplace.",
+    usedTechs: [
+      techMap.openSource,
+      techMap.typescript,
+      techMap.shadcnUI,
+      techMap.vsCodeExtension,
     ],
   },
   {
