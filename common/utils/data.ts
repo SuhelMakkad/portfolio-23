@@ -103,7 +103,7 @@ export const projects: Project[] = [
       github: "https://github.com/SuhelMakkad/vscode-shadcn-ui",
     },
     description:
-      "This extensions helps install the shadcn/ui components directly from VS Code. This extension is a great way to speed up the development process and make it easier to use shadcn/ui components in your react projects. This project has over 5.8K downloads on the VS Code marketplace.",
+      "This extensions helps install the shadcn/ui components directly from VS Code. This extension is a great way to speed up the development process and make it easier to use shadcn/ui components in your react projects. This project has over 11K downloads on the VS Code marketplace.",
     usedTechs: [
       techMap.openSource,
       techMap.typescript,
