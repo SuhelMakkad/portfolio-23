@@ -83,7 +83,7 @@ export const projects: Project[] = [
     title: "Metflix",
     subTitle: "A Netflix Clone",
     links: {
-      live: "https://met-flix.vercel.app",
+      live: "https://metflix-watch.vercel.app",
       github: "https://github.com/SuhelMakkad/metflix",
     },
     description:
