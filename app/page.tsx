@@ -30,7 +30,7 @@ export default function Home() {
         <div className="flex flex-col gap-2">
           <span className="text-5xl">Electronics Engineering</span>
           <span className="text-sm font-semibold text-zinc-800 dark:text-zinc-200">
-            May 2021 - April 2022
+            2017 - 2021
           </span>
           <span>
             Graduated from{" "}
